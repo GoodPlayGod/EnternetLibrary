@@ -1,5 +1,12 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
+    //default
     id 'com.android.application' version '7.3.1' apply false
     id 'com.android.library' version '7.3.1' apply false
+}
+
+dependencies {
+    //room
+    implementation "androidx.room:room-runtime:2.3.0"
+    annotationProcessor "androidx.room:room-compiler:2.3.0"
 }
